@@ -1,11 +1,35 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Links from "../components/Links.astro";
+import TechStack from "../components/TechStack.astro";
+import Linux from "../components/Linux.astro";
+import Education from "../components/Education.astro";
+import Experience from "../components/Experience.astro";
+import Achievements from "../components/Achievements.astro";
+import Projects from "../components/Projects.astro";
+import "../styles/global.css";
 ---
 
 <Layout>
-	<Welcome />
+  <main class="m-auto w-full max-w-6xl px-4 lg:px-20 pt-16">
+    <p class="font-fancy text-4xl font-semibold tracking-wide pb-2">
+      Soham Patel
+    </p>
+    <h4>
+      I like to work with systems.
+      <span class="italic font-fancy">( I use Arch btw. ) </span>
+    </h4>
+    <Links />
+
+    <div class="flex flex-col gap-4">
+      <Experience />
+      <Education />
+      <Achievements />
+      <!-- <Projects /> -->
+      <Linux />
+      <TechStack />
+    </div>
+    <Footer />
+  </main>
 </Layout>

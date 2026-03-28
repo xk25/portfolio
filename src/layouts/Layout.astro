@@ -1,23 +1,40 @@
+---
+import "@fontsource-variable/inter";
+import "@fontsource/libre-baskerville";
+import "@fontsource/libre-baskerville/400-italic";
+import "@fontsource/libre-baskerville/600-italic";
+import "@fontsource/ibm-plex-serif/400-italic.css";
+import "@fontsource/ibm-plex-serif/500-italic.css";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Soham patel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b9c271026f.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-gray-950 text-white">
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Inter Variable", sans-serif;
+  }
 </style>

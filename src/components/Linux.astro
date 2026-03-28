@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import lockscreen from "../assets/lockscreen.png";
+import homescreen from "../assets/homescreen.png";
+import terminal from "../assets/term.png";
+import rofi from "../assets/rofi.png";
+---
+
+<section aria-labelledby="linux-heading">
+  <h1 class="text-3xl font-semibold tracking-wide text-slate-100">
+    My Linux Setup
+  </h1>
+
+  <section class="my-5 grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-fr">
+    <img src={lockscreen.src} alt="lockscreen" class="rounded-sm" />
+    <img src={homescreen.src} alt="homescreen" class="rounded-sm" />
+    <img src={terminal.src} alt="terminal" class="rounded-sm" />
+    <img src={rofi.src} alt="rofi-launcher" class="rounded-sm" />
+  </section>
+</section>
