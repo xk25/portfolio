@@ -12,17 +12,24 @@ import "../styles/global.css";
 ---
 
 <Layout>
-  <main class="m-auto w-full max-w-6xl px-4 lg:px-20 pt-16">
-    <p class="font-fancy text-4xl font-semibold tracking-wide pb-2">
-      Soham Patel
-    </p>
-    <h4>
-      I like to work with systems.
-      <span class="italic font-fancy">( I use Arch btw. ) </span>
-    </h4>
-    <Links />
+  <main class="m-auto w-full max-w-6xl px-4 lg:px-12 pt-16 pb-12 antialiased">
+    <header class="mb-4">
+      <h1
+        class="font-fancy text-4xl sm:text-5xl font-medium tracking-tight text-white mb-1"
+      >
+        Soham Patel
+      </h1>
+      <!-- <h2
+        class="text-lg sm:text-xl text-stone-400 font-normal max-w-2xl leading-relaxed"
+      >
+        Systems Engineer
+      </h2> -->
+      <div class="mt-2 text-sm">
+        <Links />
+      </div>
+    </header>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-6 mt-4 relative">
       <Experience />
       <Education />
       <Achievements />
@@ -30,6 +37,25 @@ import "../styles/global.css";
       <Linux />
       <TechStack />
     </div>
-    <Footer />
+
+    <div class="mt-20">
+      <Footer />
+    </div>
   </main>
 </Layout>
+
+<style>
+  main {
+    animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

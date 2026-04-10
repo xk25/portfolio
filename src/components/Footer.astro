@@ -7,12 +7,12 @@ const lastUpdated = new Date().toLocaleDateString("en-IN", {
 });
 ---
 
-<footer class="w-full py-6 px-6 text-slate-300">
-  <div class="max-w-6xl mx-auto flex justify-between items-center">
-    <p class="text-sm">
+<footer class="w-full py-8 text-stone-300 border-t border-stone-800/50 mt-8">
+  <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+    <p class="text-base font-normal text-stone-400">
       &copy; {currentYear} Soham Patel
     </p>
-    <p class="text-sm text-slate-400">
+    <p class="text-sm font-normal text-stone-500">
       Last updated: {lastUpdated}
     </p>
   </div>

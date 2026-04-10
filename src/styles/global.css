@@ -7,19 +7,10 @@
 
 @layer components {
   .social-logo-anim {
-    @apply inline-flex items-center justify-center rounded-md text-2xl transition-[color,transform] duration-200 ease-out motion-reduce:transition-none hover:-translate-y-0.5 hover:text-neutral-200 focus-visible:-translate-y-0.5 focus-visible:text-neutral-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-current focus-visible:ring-offset-2;
-  }
-
-  .social-logo-anim > i {
-    @apply transition-transform duration-200 ease-out motion-reduce:transition-none;
-  }
-
-  .social-logo-anim:hover > i,
-  .social-logo-anim:focus-visible > i {
-    @apply -translate-y-px scale-105;
+    @apply inline-flex items-center justify-center rounded-md text-2xl transition-colors duration-200 ease-out motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-current focus-visible:ring-offset-2;
   }
 
   .profile-link-anim {
-    @apply inline-block font-medium text-slate-200 underline decoration-slate-500 underline-offset-4 transition-[color,transform,text-decoration-color] duration-200 ease-out motion-reduce:transition-none hover:-translate-y-px hover:text-amber-300 hover:decoration-amber-300 focus-visible:-translate-y-px focus-visible:text-amber-300 focus-visible:decoration-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/80 focus-visible:ring-offset-2;
+    @apply inline-block font-medium text-stone-200 underline decoration-stone-500 underline-offset-4 transition-[color,transform,text-decoration-color] duration-200 ease-out motion-reduce:transition-none hover:-translate-y-px hover:text-orange-400 hover:decoration-orange-400 focus-visible:-translate-y-px focus-visible:text-orange-400 focus-visible:decoration-orange-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/80 focus-visible:ring-offset-2;
   }
 }
